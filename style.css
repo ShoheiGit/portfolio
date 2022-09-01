@@ -7,7 +7,9 @@ Description: ショウヘイのポートフォリオテーマ
 /*common*/
 *{
     margin: 0;
+    padding: 0;
 }
+
 
 p{
     line-height: 1.5em;
@@ -71,19 +73,20 @@ section{
 /*header*/
 .header-top{
     font-size: 20px;
-    
+    width: 100%;
+    position: absolute;
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-between;
 }
 
 .header-left{
-    position: absolute;
-    top: 10px;
-    left: 10px;
+    margin-left: 10px;
 }
 
 .header-right{
-    position: absolute;
-    top: 30px;
-    right: 30px;
+    align-self: center;
+    margin-right: 10px;
 }
 
 .header-right ul{
@@ -223,15 +226,21 @@ nav a:hover{
 }
 
 /*skils*/
+.skils{
+    width: 100%;
+}
+
 .skil{
     display: flex;
     flex-direction: row;
     width: 80%;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 .type{
-    width: 25%;
+    width: calc((100% - 30px) / 4);
+    min-width: 40px;
     margin: 0 auto;
     background: rgba(194, 194, 194, 0.5);
     border-radius: 15px;
@@ -243,6 +252,10 @@ nav a:hover{
 
 .type + .type{
     margin-left: 10px;
+}
+
+.space{
+    padding: 10px;
 }
 
 .animate.delay{
@@ -312,7 +325,7 @@ nav a:hover{
 footer{
     text-align: center;
     padding: 10px;
-    padding-top: 100px;
+    padding-top: 10px;
 }
 
 /*top-btn*/
@@ -329,4 +342,71 @@ footer{
 #to_top i{
     font-size: 32px;
     color: #000;
+}
+
+
+/*small screen*/
+@media (max-width:599px) {
+    
+    .header-top{
+        flex-direction: column;
+    }
+
+    .header-left{
+        font-size: 10px;
+        width: 100%;
+    }
+
+    .header-right{
+        font-size: 8px;
+    }
+
+    .header-text{
+        top: 13%;
+        font-size: 8px;
+    }
+
+    .header-text-under{
+        top: 17%;
+        left: 30%;
+        font-size: 8px;
+    }
+
+    section{
+        margin-top: 30px;
+    }
+
+    .about-main{
+        flex-direction: column;
+    }
+
+    .about-img{
+        margin: 0 auto;
+    }
+
+    .about-text{
+        margin: 0 auto;
+    }
+
+    .about-text dt{
+        width: 30%;
+    }
+
+    .about-text dd{
+        width: 70%;
+    }
+
+
+    .skil{
+        flex-direction: column;
+    }
+
+    .type{
+        width: 100%;
+        margin-bottom: 4px;
+    }
+
+    .type + .type{
+        margin:4px 0;
+    }
 }
