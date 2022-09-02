@@ -1,0 +1,437 @@
+@charset "utf-8";
+
+/*common*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    font-family:  'Merriweather', serif;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+main{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+section + section{
+    margin: 40px 0;
+}
+
+.main-h2{
+    
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border-bottom: 1px solid black;
+    width: 130px;
+}
+
+.animate{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity .5s, transform .5s;
+}
+
+
+
+.animate.appear{
+    opacity: 1;
+    transform: none;
+}
+
+
+/*header*/
+header{
+    color: white;
+}
+
+
+
+.background{
+    z-index: -1;
+}
+
+.background img{
+    pointer-events: none;
+}
+
+.header-img::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 98%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.header-top{
+    font-size: 12px;
+    justify-content: space-between;
+    margin: 4px;
+    position: absolute;
+    top: 5px;
+    z-index: 10;
+}
+
+.header-right a{
+    position: relative;
+}
+
+.header-right li{
+    margin: 0 auto;
+}
+
+ul{
+    display: flex;
+}
+
+li + li{
+    margin-left: 10px;
+}
+
+.header-img{
+    position: relative;
+}
+
+.header-text{
+    font-size: 12px;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+}
+
+.header-text-under{
+    font-size: 12px;
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    margin: auto;
+    transform: translate(-50%, -50%);
+    
+}
+
+.header-text p{
+    opacity: 0;
+    transition: opacity 1s;
+    position: absolute;
+}
+
+.header-text p.show{
+    opacity: 1;
+    transition-delay: 1.2s;
+}
+
+nav a:hover{
+    color: #ebc034;
+    transition: all .5s;
+}
+
+/*fadeIn*/
+@keyframes fadein{
+    0%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadein{
+    opacity: 0;
+    animation-name: fadein;
+    animation-duration: 1.5s;
+    animation-delay: .5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+/*about*/
+.about{
+    width: 80%;
+    margin: 30px auto;
+}
+
+.animate.about-text{
+    transform: translateX(100px);
+}
+
+.animate.about-img{
+    transform: translateX(-100px);
+}
+
+.animate.about-text.appear{
+    transform: none;
+}
+
+.animate.about-img.appear{
+    transform: none;
+}
+
+.about-img img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.about-main{
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+.about-text{
+    text-align: left;
+}
+
+.about-text dl{
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1.7em;
+    margin-top: 10px;
+}
+
+.about-text dt{
+    width: 20%;
+}
+
+.about-text dd{
+    width: 80%;
+}
+
+.about-text #strong{
+    font-weight: bold;
+}
+
+
+
+/*service*/
+.service{
+    background-image: url(img/coffee-gb26093171_1920.jpg);
+    padding: 60px 0;
+    background-size: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+.box{
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 60px 30px;
+    margin: 50px 0;
+    display: inline-block;
+}
+
+/*skils*/
+.skils{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.skil{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+
+.type{
+    background-color: rgba(194, 194, 194, 0.5);
+    border-radius: 15px;
+    width: calc((100% - 18px) / 4);
+    min-width: 300px;
+    margin: 6px auto;  
+}
+
+.no-style{
+    background-color: white;
+}
+
+
+.space{
+    padding: 8px;
+}
+
+.skil i{
+    font-size: 70px;
+}
+
+.animate.delay{
+    transition-delay: .2s;
+}
+.animate.delay-more{
+    transition-delay: .4s;
+}
+.animate.delay-more-more{
+    transition-delay: .6s;
+}
+
+/*works*/
+.works{
+    background-image: url(img/pc.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.portfolio{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.portfolio-mask{
+    flex: auto;
+    width: 29%;
+    margin: 10px;
+}
+
+.caption{
+    text-align: center;
+    padding: 100px 10px;
+}
+
+/*works-hover*/
+.portfolio-mask{
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio-mask .caption{
+    color: #fff;
+}
+
+.portfolio-mask .mask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+
+.portfolio-mask:hover .mask{
+    top: 0;
+}
+
+/*footer*/
+footer{
+    text-align: center;
+    background-color: rgb(10,10,10);
+    color: #fff;
+    padding: 10px;
+}
+
+/*top-btn*/
+#to_top{
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    transition: opacity .5s;
+    opacity: 0;
+}
+
+#to_top i{
+    color: #000;
+    font-size: 32px;
+}
+
+#to_top i:hover{
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#to_top.scrolled{
+    opacity: 1;
+}
+
+/*medium screen*/
+@media (min-width:600px) {
+    .header-top{
+        display: flex;
+        margin: 5px 15px;
+        font-size: 20px;
+        width: 98%;
+    }
+
+    .header-right{
+        align-self: center;
+    }
+
+    .header-right li{
+        margin-right: 20px;
+    }
+
+    .header-text{
+        font-size: 22px;
+        /* width: 300px;
+        left: 60%; */
+    }
+
+    .header-text-under{
+        font-size: 22px;
+        /* width: 400px;
+        left: 35%; */
+    }
+
+
+    /*about*/
+    .about-main{
+        display: flex;
+        margin: 0 auto;
+    }
+    
+    
+
+    .about-img{
+        width: 40%;
+        margin-right: 10px;
+    }
+
+    .about-text{
+        width: 60%;
+    }
+
+
+
+    
+}
+
+/*large screen*/
+@media (min-width:800px) {
+    .header-text{
+        font-size: 24px;
+        /* width: 400px;
+        left: 55%; */
+    }
+
+    .header-text-under{
+        font-size: 24px;
+        /* width: 500px;
+        left: 38%; */
+    }
+}
