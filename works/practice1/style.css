@@ -1,0 +1,194 @@
+body{
+    margin: 0;
+    color: #383e45;
+}
+a{
+    text-decoration: none;
+}
+
+.side{
+    margin: 0 20px;
+}
+
+header{
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.header-left{
+    float: left;
+    margin:10px 0 0 20px;
+    color: #fff;
+    font-size: 25px;
+    background-color: #27295e;
+}
+
+.header-left a{
+    display: inline-block;
+    padding: 5px 40px;
+    color: white;
+}
+
+.header-right{
+    float: right;
+    margin-top: 10px;
+}
+
+.header-right a{
+    color: #383e45;
+}
+
+.header-right li{
+    float: left;
+    margin-right: 20px;
+    list-style: none;
+}
+
+/*ホームに戻るボタン*/
+.back-home{
+    display: inline-block;
+    margin-left: 20px;
+    opacity: 0.5;
+    position: fixed;
+    top: 10;
+    left: 10;
+}
+
+.back-home a{
+    color: #fff;
+    padding: 10px;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+.back-home i{
+    margin-right: 4px;
+}
+
+
+.top-wrapper{
+    margin: 0 auto;
+}
+
+.top-wrapper img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.about{
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+.about-h2{
+    text-align: center;
+}
+
+.about-h2 h2{
+    font-size: 32px;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: solid 1px #383e45;
+    display: inline-block;
+}
+
+
+.about-img  img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.about-img{
+    margin-right: 20px;
+    width: 30%;
+    text-align: center;
+}
+
+.about-text{
+    width: 70%;
+}
+
+
+.about-detail{
+    width: 100%;
+    display: flex;
+}
+
+.products{
+    display: flex;
+}
+
+.product{
+    flex: auto;
+}
+
+.product img{
+    width: 100%;
+}
+
+.product1, .product2{
+    margin-right: 20px;
+}
+
+.bicycle{
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.bicycle-h2 h2{
+    display: inline-block;
+    border-bottom: solid 1px #383e45;
+    font-size: 32px;
+}
+
+.bicycle-h2{
+    margin-bottom: 60px;
+}
+
+footer{
+    text-align: center;
+}
+
+
+/* スマホ版設定 */
+@media(max-width:670px){
+
+    .about-detail{
+        flex-direction: column;
+        border: solid 1px #383e45;
+        margin-top: 20px;
+    }
+
+    .about-img{
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+        border-bottom: solid 1px    #383e45;
+    }
+
+    .about-text{
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-text p{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .products{
+        flex-direction: column;
+    }
+
+    .product{
+        margin-bottom: 50px;
+    }
+
+    .product1, .product2{
+        margin-right: 0px;
+    }
+
+}
