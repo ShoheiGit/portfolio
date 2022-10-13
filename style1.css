@@ -44,7 +44,7 @@ section + section{
 .animate{
     opacity: 0;
     transform: translateY(40px);
-    transition: opacity .5s, transform .5s;
+    transition: opacity 1s, transform 1s;
 }
 
 
@@ -70,15 +70,6 @@ header{
     pointer-events: none;
 }
 
-/* .header-img::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-} */
 
 .header-top{
     font-size: 12px;
@@ -257,9 +248,12 @@ nav a:hover{
 .service{
     background-image: url(img/coffee-gb26093171_1920.jpg);
     padding: 60px 0;
-    background-size: 100%;
-    background-size: cover;
+    width: 95%;
+    border-radius: 30px;
+    margin: 50px auto;
+    background-size:cover;
     background-attachment: fixed;
+    background-position: center;
 }
 
 
@@ -281,7 +275,6 @@ nav a:hover{
 .skil{
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
 }
 
 .type{
@@ -293,7 +286,7 @@ nav a:hover{
 }
 
 .no-style{
-    background-color: white;
+    background-color: #d1d0cd;
 }
 
 
@@ -321,51 +314,49 @@ nav a:hover{
     background-image: url(img/pc.jpg);
     background-size: cover;
     background-attachment: fixed;
+    border-radius: 30px;
+    width: 95%;
+    margin: 50px auto;
 }
 
+
 .portfolio{
-    padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
+    padding: 20px;
+    width: 90%;
     margin: 0 auto;
+    text-align: center;
 }
 
 .portfolio-mask{
     flex: auto;
-    width: 29%;
+    height: auto;
+    width: 25%;
     margin: 10px;
+    overflow: hidden;
+    border-radius: 30px;
+    min-width: 300px;
 }
+
+.portfolio-mask img{
+    border-radius: 30px;
+    margin: 0 auto;
+    transition: all 1s;
+}
+
+.portfolio-mask img:hover{
+    transform: scale(1.2,1.2);
+    transition: all 1s ;
+}
+
 
 .caption{
     text-align: center;
     padding: 100px 10px;
 }
 
-/*works-hover*/
-.portfolio-mask{
-    overflow: hidden;
-    position: relative;
-}
 
-.portfolio-mask .caption{
-    color: #fff;
-}
-
-.portfolio-mask .mask{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: -100%;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    -webkit-transition: all 0.6s ease;
-    transition: all 0.6s ease;
-}
-
-.portfolio-mask:hover .mask{
-    top: 0;
-}
 
 /*footer*/
 footer{
