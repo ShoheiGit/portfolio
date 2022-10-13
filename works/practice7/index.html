@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice7</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <!-- モーダル -->
+        <div id="mask" class="hidden"></div>
+        <div id="modal" class="hidden">
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="#pickup">PICK UP</a></li>
+                    <li><a href="#feature">FEATURE</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        
+
+            <nav id="nav-sns">
+                <ul>
+                    <li><a href="#">Twiter</a></li>
+                    <li><a href="#">facebook</a></li>
+                    <li><a href="#">instagram</a></li>
+                </ul>
+            </nav>
+
+            
+            <div id="close" class="hidden"><i class="bi bi-x"></i></div>
+        </div>
+
+
+    
+    <!-- モーダル終わり -->
+
+    <header>
+        <div class="header">
+            <div class="header-left">
+                <a href="index.html">
+                <img src="img/logo.svg" alt="logo">
+                </a>
+            </div>
+
+            <div class="header-right">
+                <div class="toggle_btn" id="open">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="video">
+            <video id="bg-video" src="img/video.mp4" loop autoplay muted playsinline></video>
+        </div>
+
+        <div class="pickup" id="pickup">
+            <h2>PICK UP</h2>
+            <ul class="slider-1" id="js-slider-1">
+                <li><img src="img/pickup1.jpg" alt="sneaker"></li>
+                <li><img src="img/pickup2.jpg" alt="sneaker"></li>
+                <li><img src="img/pickup3.jpg" alt="sneaker"></li>
+                <li><img src="img/pickup4.jpg" alt="sneaker"></li>
+                <li><img src="img/pickup5.jpg" alt="sneaker"></li>
+                <li><img src="img/pickup6.jpg" alt="sneaker"></li>
+                <li><img src="img/pickup7.jpg" alt="sneaker"></li>
+                <li><img src="img/pickup8.jpg" alt="sneaker"></li>
+                <li><img src="img/pickup9.jpg" alt="sneaker"></li>
+            </ul>
+        </div>
+
+        <div class="features" id="feature">
+            <h2>FEATURES</h2>
+            <div class="container-item">
+                <section>
+                    <img src="img/feature1.jpg" alt=""  class="animate">
+                    <h3>category</h3>
+                    <p class="item-text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                    <p class="date">xxxx.xx.xx</p>
+                </section>
+                
+                <section>
+                    <img src="img/feature2.jpg" alt="" class="animate">
+                    <h3>category</h3>
+                    <p class="item-text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                    <p class="date">xxxx.xx.xx</p>
+                </section>
+
+                <section>
+                    <img src="img/feature3.jpg" alt="" class="animate">
+                    <h3>category</h3>
+                    <p class="item-text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                    <p class="date">xxxx.xx.xx</p>
+                </section>
+
+                <section>
+                    <img src="img/feature4.jpg" alt="" class="animate">
+                    <h3>category</h3>
+                    <p class="item-text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                    <p class="date">xxxx.xx.xx</p>
+                </section>
+
+                <section>
+                    <img src="img/feature5.jpg" alt="" class="animate">
+                    <h3>category</h3>
+                    <p class="item-text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                    <p class="date">xxxx.xx.xx</p>
+                </section>
+
+                <section>
+                    <img src="img/feature6.jpg" alt="" class="animate">
+                    <h3>category</h3>
+                    <p class="item-text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                    <p class="date">xxxx.xx.xx</p>
+                </section>
+
+                <section>
+                    <img src="img/feature7.jpg" alt="" class="animate">
+                    <h3>category</h3>
+                    <p class="item-text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                    <p class="date">xxxx.xx.xx</p>
+                </section>
+
+                <section>
+                    <img src="img/feature8.jpg" alt="" class="animate">
+                    <h3>category</h3>
+                    <p class="item-text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                    <p class="date">xxxx.xx.xx</p>
+                </section>
+
+                <section>
+                    <img src="img/feature9.jpg" alt="" class="animate">
+                    <h3>category</h3>
+                    <p class="item-text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                    <p class="date">xxxx.xx.xx</p>
+                </section>
+            </div>
+        </div>
+
+        <div class="contact" id="contact">
+            <h2>CONTACT</h2>
+            <div class="container">
+                <div class="contact-text">
+                    
+                    <p>テキストテキストテキストテキスト</p>
+                    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                </div>
+
+                <form action="#">
+                    <dl>
+                        <dt><label for="name">Name:</label></dt>
+                        <dd><input type="text" id="name" name="your-name"></dd>
+                        <dt><label for="email">Mail:</label></dt>
+                        <dd><input type="email" id="email" name="your-email"></dd>
+                        <dt><label for="message">Message:</label></dt>
+                        <dd><textarea id="message" name="your-message"></textarea></dd>
+                    </dl>
+                    <div class="button"><input class="submit" type="submit" value="SEND"></div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer> &copy; sneakers</footer>
+    
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
