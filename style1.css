@@ -30,7 +30,7 @@ main{
     width: 95%;
     margin: 0 auto;
     background-color: #d1d0cd;
-    padding-top: -10px;
+    padding-top: 30px;
     overflow-x: hidden;
 }
 
@@ -58,11 +58,16 @@ section + section{
     transform: none;
 }
 
+.bg_white{
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+}
+
 
 /*header*/
 header{
     color: white;
-    height: 100vh;
+    height: 92vh;
 }
 
 
@@ -326,21 +331,20 @@ nav a:hover{
 
 /*works*/
 .works{
-    background-image: url(img/pc.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    border-radius: 30px;
     width: 85%;
     margin: 50px auto;
     margin-bottom: 0;
 }
 
-.works .main-h2{
-    box-shadow: 4px #000;
+.works_bg{
+    background-image: url(img/pc.jpg);
+    background-size: cover;
+    border-radius: 30px;
 }
 
-.bg_white{
-    background-color: rgba(255, 255, 255, 0.3);
+
+.works .main-h2{
+    box-shadow: 4px #000;
 }
 
 
@@ -373,14 +377,6 @@ nav a:hover{
     transform: scale(1.2,1.2);
     transition: all 1s ;
 }
-
-
-.caption{
-    text-align: center;
-    padding: 100px 10px;
-}
-
-
 
 
 /*bcolor*/
