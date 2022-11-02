@@ -26,6 +26,10 @@
     padding:0  5px  ;
 }
 
+.works_main a{
+    color: white;
+}
+
 /*header*/
 .works_header{
     height: 10vh;
@@ -44,4 +48,21 @@
     margin: 0 auto;
     width: 90%;
     justify-content: space-between;
+}
+
+
+/*------------works_descページ----------*/
+.works_desc{
+    width: 80%;
+}
+
+.works_desc_text{
+    text-align-last: left;
+    margin: 7% 0;
+    padding: 20px 10px;
+}
+
+.works_desc_text h3{
+    border-bottom: solid 1px;
+    width: 20%;
 }
