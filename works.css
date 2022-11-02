@@ -1,0 +1,47 @@
+/*共通*/
+.works_main{
+    text-align-last: left;
+    width: 80%;
+}
+
+.works_main img{
+    width: 100%;
+}
+
+.works_h3{
+    border-bottom: solid 1px gray;
+}
+
+.works_portfolio{
+    max-width: 20%;
+    min-width: 150px;
+    width: 25%;
+    border: solid 1px;
+    background-color: #000;
+    margin: 10px auto;
+    color: white;
+}
+
+.works_portfolio p{
+    padding:0  5px  ;
+}
+
+/*header*/
+.works_header{
+    height: 10vh;
+}
+
+/*design*/
+.works_design_section{
+    display: flex;
+}
+
+
+/*coding*/
+.works_coding_section{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 90%;
+    justify-content: space-between;
+}
