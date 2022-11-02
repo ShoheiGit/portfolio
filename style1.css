@@ -90,6 +90,10 @@ header{
     z-index: 10;
 }
 
+#bgwhite.bg_white{
+    background-color: #fff;
+}
+
 .header-right a{
     position: relative;
 }
@@ -355,6 +359,8 @@ nav a:hover{
     width: 90%;
     margin: 0 auto;
     text-align: center;
+    position: relative;
+    padding-bottom: 10%;
 }
 
 .portfolio-mask{
@@ -378,6 +384,26 @@ nav a:hover{
     transition: all 1s ;
 }
 
+/*works_archive*/
+.works_archive{
+    margin: 0 auto;
+    position: absolute;
+    bottom: 3%;
+    left: calc((80%-20px)/2);
+}
+
+.works_archive a{
+    border: solid 1px;
+    padding: 10px 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 30px;
+}
+
+.works_archive a:hover{
+    background-color: #fff;
+    color: #000;
+}
 
 /*bcolor*/
 .bcolor{
