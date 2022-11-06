@@ -389,7 +389,7 @@ nav a:hover{
     margin: 0 auto;
     position: absolute;
     bottom: 3%;
-    left: calc((80%-20px)/2);
+    right: 0;
 }
 
 .works_archive a{
