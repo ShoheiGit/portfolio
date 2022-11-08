@@ -72,6 +72,15 @@
     width: calc(70%/4);
 }
 
+.works_design_section{
+    display: flex;
+    flex-direction: column;
+}
+
+.works_portfolio{
+    min-width: 250px;
+}
+
 @media (min-width:600px){
     .works_desc_text{
         display: flex;
@@ -86,5 +95,14 @@
     
     .works_desc_text_right{
         width: 68%;
+    }
+
+    .works_design_section{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .works_portfolio{
+        min-width: 200px;
     }
 }
