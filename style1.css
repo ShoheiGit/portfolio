@@ -511,3 +511,7 @@ footer{
     }
 }
 
+/* works_anken1 */
+.anken_rink a:hover{
+    color: orange;
+}
