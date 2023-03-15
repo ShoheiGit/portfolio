@@ -449,6 +449,17 @@ footer{
     opacity: 1;
 }
 
+/* SP */
+@media (max-width:599px) {
+    .header-img video{
+        height: 720px;
+    }
+    .header-img{
+        height: 720px;
+    }
+
+}
+
 /*medium screen*/
 @media (min-width:600px) {
     .header-top{
