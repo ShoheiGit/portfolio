@@ -452,10 +452,10 @@ footer{
 /* SP */
 @media (max-width:599px) {
     .header-img video{
-        height: 720px;
+        height: 650px;
     }
     .header-img{
-        height: 720px;
+        height: 650px;
     }
 
 }
