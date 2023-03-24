@@ -452,10 +452,14 @@ footer{
 /* SP */
 @media (max-width:599px) {
     .header-img video{
-        height: 650px;
+        height: 720px;
     }
     .header-img{
-        height: 650px;
+        height: 720px;
+    }
+    .skils{
+        width: 80%;
+        margin: 0 auto;
     }
 
 }
